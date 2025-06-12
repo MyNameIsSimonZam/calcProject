@@ -1,0 +1,60 @@
+# === Visual Studio / VS Code ===
+.vs/
+.vscode/
+*.suo
+*.user
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.VC.db
+*.VC.opendb
+*.ncb
+*.aps
+
+# === CMake ===
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build/
+install_manifest.txt
+
+# === Compiled binaries ===
+*.exe
+*.dll
+*.lib
+*.exp
+*.pdb
+*.obj
+*.out
+*.o
+*.a
+*.so
+*.elf
+app
+
+# === Debugging ===
+*.ilk
+*.idb
+*.tlog
+*.dSYM/
+*.gch
+
+# === Logs ===
+*.log
+
+# === Temp / Cache ===
+*.tmp
+*.bak
+*.cache
+*~
+*.swp
+*.swo
+
+# === Zsh-related (optional) ===
+.zcompdump*
+.p10k.zsh
+
+# === Test files ===
+test.txt
