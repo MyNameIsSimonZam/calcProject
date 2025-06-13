@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.10.0)
 project(calcProject VERSION 0.1.0 LANGUAGES C CXX)
 
-add_executable(calcProject main.cpp)
+add_executable(calcProject main.cpp SourceFunctions.cpp )
 
+target_include_directories(calcProject PRIVATE ${CMAKE_SOURCE_DIR})
