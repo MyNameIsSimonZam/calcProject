@@ -1,4 +1,5 @@
 #include <iostream>
+#include "math.h"
 
 namespace math {
 double addition(double firstValue, double secondValue) {
@@ -9,7 +10,12 @@ double multiple(double firstValue, double secondValue) {
   return firstValue * secondValue;
 }
 
-double divided(double firstValue, double secondValue) {
+double divided(double firstValue, double secondValue, bool &zeroCheck) {
+  if (secondValue == 0) {
+    zeroCheck = true;
+    return 0;
+  }
+  zeroCheck = false;
   return firstValue / secondValue;
 }
 

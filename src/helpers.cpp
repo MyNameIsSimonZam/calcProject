@@ -1,5 +1,6 @@
 #include <iostream>
 
+#include "helpers.h"
 #include "math.h"
 
 int readInt() {
@@ -44,11 +45,14 @@ void calculate() {
         std::cout << math::addition(firstValue, secondValue) << "\n";
       } else if (baseCommand == "multiple") {
         std::cout << math::multiple(firstValue, secondValue) << "\n";
-      } else if (baseCommand == "divided" && secondValue == 0) {
-        std::cout << "don't divide by zero" << "\n";
-        continue;
       } else if (baseCommand == "divided") {
-        std::cout << math::divided(firstValue, secondValue) << "\n";
+        bool ziroCheck{};
+        double result{math::divided(firstValue, secondValue, ziroCheck)};
+        if (ziroCheck) {
+          std::cout << "don't divide by zero\n";
+          continue;
+        }
+        std::cout << result << "\n";
       } else if (baseCommand == "power") {
         std::cout << math::power(firstValue, secondValue) << "\n";
       }

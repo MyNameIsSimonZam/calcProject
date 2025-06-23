@@ -1,7 +1,6 @@
 #include <iostream>
 
-#include "header.h"
-#include "math.h"
+#include "helpers.h"
 
 int main(int, char**) {
   calculate();
