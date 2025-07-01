@@ -12,7 +12,8 @@ target_sources(calcProject PRIVATE
 
 FetchContent_Declare(
   mathlib
-  SOURCE_DIR ${CMAKE_SOURCE_DIR}/mathlib
+  GIT_REPOSITORY https://github.com/MyNameIsSimonZam/mathlib.git
+  GIT_TAG main
 )
 
 FetchContent_MakeAvailable(mathlib)
